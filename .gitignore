@@ -1,0 +1,46 @@
+# Mengabaikan file salinan README
+README - Copy*.md
+
+# OS / System Files
+.DS_Store
+Thumbs.db
+
+# IDE / Editor Files
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# ----------------------------------------
+# BACKEND (Laravel)
+# ----------------------------------------
+/backend/vendor/
+/backend/node_modules/
+/backend/public/build/
+/backend/public/hot/
+/backend/public/storage/
+/backend/storage/*.key
+/backend/.env
+/backend/.env.backup
+/backend/.env.production
+/backend/*.log
+/backend/storage/logs/*.log
+/backend/.phpunit.cache
+/backend/.phpunit.result.cache
+
+# ----------------------------------------
+# FRONTEND (React / Vite)
+# ----------------------------------------
+/frontend/node_modules/
+/frontend/dist/
+/frontend/dist-ssr/
+/frontend/.env
+/frontend/.env.*.local
+/frontend/*.log
+/frontend/npm-debug.log*
+/frontend/yarn-debug.log*
+/frontend/yarn-error.log*
+/frontend/pnpm-debug.log*

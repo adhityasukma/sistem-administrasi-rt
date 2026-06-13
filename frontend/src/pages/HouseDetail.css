@@ -1,0 +1,49 @@
+.house-detail-page { animation: fadeIn 0.3s ease; }
+.btn-back { display: inline-flex; align-items: center; gap: 8px; background: none; border: none; color: var(--text-secondary); cursor: pointer; font-size: 0.95rem; padding: 8px 0; margin-bottom: 20px; transition: var(--transition); }
+.btn-back:hover { color: var(--primary); }
+.house-info-card { display: flex; align-items: center; gap: 16px; padding: 24px; }
+.house-info-card h1 { font-size: 1.8rem; margin: 0; color: var(--text-primary); }
+.house-desc { color: var(--text-secondary); margin: 8px 0 0; }
+.current-resident-section { margin-top: 32px; margin-bottom: 24px; }
+.current-resident-section h2 { font-size: 1.2rem; margin-bottom: 16px; color: var(--text-primary); }
+.resident-card { display: flex; justify-content: space-between; align-items: center; padding: 24px; flex-wrap: wrap; gap: 16px; }
+.resident-info { display: flex; align-items: center; gap: 16px; }
+.resident-avatar { width: 56px; height: 56px; border-radius: 50%; background: linear-gradient(135deg, var(--primary), var(--secondary)); display: flex; align-items: center; justify-content: center; font-size: 1.4rem; font-weight: 700; color: white; flex-shrink: 0; }
+.resident-details h3 { margin: 0 0 4px; font-size: 1.1rem; }
+.resident-details p { margin: 0 0 8px; color: var(--text-secondary); display: flex; align-items: center; gap: 6px; font-size: 0.9rem; }
+.resident-badges { display: flex; gap: 8px; flex-wrap: wrap; }
+.resident-actions { display: flex; gap: 8px; flex-wrap: wrap; }
+.empty-resident { display: flex; flex-direction: column; align-items: center; padding: 48px 24px; text-align: center; }
+.empty-resident .empty-icon { font-size: 3rem; color: var(--text-muted); margin-bottom: 12px; }
+.empty-resident p { color: var(--text-secondary); margin-bottom: 16px; }
+.tabs { display: flex; gap: 4px; margin-bottom: 20px; border-bottom: 1px solid var(--border); }
+.tab { padding: 12px 24px; background: none; border: none; border-bottom: 2px solid transparent; color: var(--text-secondary); cursor: pointer; font-size: 0.95rem; font-weight: 500; transition: var(--transition); }
+.tab:hover { color: var(--text-primary); }
+.tab.active { color: var(--primary); border-bottom-color: var(--primary); }
+.tab-content { animation: fadeIn 0.3s ease; }
+.empty-state { text-align: center; padding: 48px; color: var(--text-secondary); }
+.history-timeline { display: flex; flex-direction: column; gap: 16px; position: relative; padding-left: 24px; }
+.timeline-item { padding: 16px 20px; position: relative; }
+.timeline-item.active { border-left: 3px solid var(--success); }
+.timeline-dot { width: 12px; height: 12px; border-radius: 50%; background: var(--primary); position: absolute; left: -30px; top: 24px; }
+.timeline-item.active .timeline-dot { background: var(--success); box-shadow: 0 0 8px var(--success); }
+.timeline-content h4 { margin: 0 0 4px; }
+.timeline-dates { color: var(--text-secondary); font-size: 0.85rem; margin: 0 0 8px; }
+.payments-list { display: flex; flex-direction: column; gap: 8px; }
+.payment-item { display: flex; align-items: center; justify-content: space-between; padding: 14px 20px; flex-wrap: wrap; gap: 8px; }
+.payment-info { display: flex; align-items: center; gap: 12px; }
+.payment-period { color: var(--text-secondary); font-size: 0.9rem; }
+.payment-amount { font-weight: 600; color: var(--success); font-size: 1.05rem; }
+.payment-paid { color: var(--text-muted); font-size: 0.8rem; }
+.form-group { margin-bottom: 16px; }
+.form-group label { display: block; margin-bottom: 6px; font-weight: 500; color: var(--text-secondary); font-size: 0.9rem; }
+.form-group select, .form-group input, .form-group textarea { width: 100%; }
+.modal-actions { display: flex; justify-content: flex-end; gap: 12px; margin-top: 20px; }
+
+@media (max-width: 768px) {
+  .resident-card { flex-direction: column; align-items: flex-start; }
+  .resident-actions { width: 100%; }
+  .resident-actions .btn { flex: 1; justify-content: center; }
+  .payment-item { flex-direction: column; align-items: flex-start; }
+  .tab { padding: 10px 16px; font-size: 0.85rem; }
+}

@@ -1,0 +1,138 @@
+.residents-page .page-header-row {
+  margin-bottom: 8px;
+}
+
+.resident-status-toggle {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 4px 0;
+}
+
+.resident-status-toggle label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+}
+
+.resident-status-toggle input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  accent-color: var(--primary);
+}
+
+.residents-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+@media (min-width: 480px) { .residents-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 768px) { .residents-grid { grid-template-columns: repeat(3, 1fr); } }
+@media (min-width: 1024px) { .residents-grid { grid-template-columns: repeat(4, 1fr); } }
+
+.resident-card {
+  background: var(--bg-card);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius);
+  padding: 16px;
+  transition: var(--transition);
+  animation: fadeIn 0.3s ease-out;
+  display: flex;
+  flex-direction: column;
+}
+
+.resident-card:hover {
+  border-color: rgba(99, 102, 241, 0.3);
+  box-shadow: var(--shadow-lg);
+}
+
+.resident-card-header {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  margin-bottom: 14px;
+}
+
+.resident-avatar-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+}
+
+.resident-avatar-circle {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.15rem;
+  font-weight: 600;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+.resident-name-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.resident-name {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 2px;
+}
+
+.resident-phone {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.resident-card-body {
+  flex: 1;
+  border-top: 1px solid var(--border-light);
+  padding-top: 12px;
+  margin-top: 4px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
+.resident-detail-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.85rem;
+  width: 100%;
+}
+
+.resident-detail-label {
+  color: var(--text-muted);
+}
+
+.resident-detail-value {
+  color: var(--text-primary);
+  font-weight: 500;
+  text-align: right;
+}
+
+.resident-card-footer {
+  margin-top: 14px;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
