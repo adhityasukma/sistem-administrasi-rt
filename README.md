@@ -193,9 +193,15 @@ Login dengan:
 
 ### 6. Laporan Keuangan
 
-- **Grafik tahunan**: Bar chart pemasukan vs pengeluaran per bulan
-- **Ringkasan**: Total pemasukan, pengeluaran, saldo per tahun
-- **Detail bulanan**: Rincian pemasukan (per jenis iuran) dan pengeluaran per bulan
+Fitur laporan keuangan menyediakan:
+
+- Ringkasan total pemasukan tahunan
+- Ringkasan total pengeluaran tahunan
+- Saldo tahunan
+- Grafik pemasukan vs pengeluaran selama 12 bulan
+- Detail pemasukan bulanan
+- Detail pengeluaran bulanan
+- Saldo per bulan
 
 ![Screenshot list pengeluaran](images/laporan_keuangan.png)
 
